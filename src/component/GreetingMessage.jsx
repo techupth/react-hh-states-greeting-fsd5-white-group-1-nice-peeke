@@ -1,13 +1,11 @@
-/**@jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 import { useState } from "react";
 
 export function GreetingMessage() {
   const [greetingMessage, setGreetingMessage] = useState("Greeting Message");
   return (
     <>
-      <div className="ShowMessage">{greetingMessage}</div>
-      <div>
+      <div className="greeting-container">{greetingMessage}</div>
+      <div className="buttons">
         <button
           onClick={(text) => {
             setGreetingMessage((text = "สวัสดี!"));
